@@ -1,0 +1,36 @@
+
+ #main {background:url(images/bggg.jpg) no-repeat center center fixed;background-size: cover;}
+ ul.ul {list-style: none;}
+.text-orange{color:rgb(172, 96, 58);}
+ .font-1{font-family: 'Genos', sans-serif;}
+ .font-2{font-family: 'Roboto Slab', serif;}
+ .font-3{font-family: 'Varela Round', sans-serif;}
+ .floating-top {animation-name: floating;}
+ .floating-left {animation-name: floatingLeft;}
+ .floating-right {animation-name: floatingRight;}
+ .floating {animation-duration: 3s;animation-iteration-count: infinite;animation-timing-function: ease-in-out;margin-left: 0px;margin-top: 5px;}
+
+ @keyframes floating { from { transform: translate(0,  0px); } 65%  { transform: translate(0, 15px); } to   { transform: translate(0, -0px); } }
+ @keyframes floatingLeft { from { transform: translate(0, 0px); } 50% { transform: translate(50px, 15px); } /* Adjusted values for left to right motion */ to { transform: translate(0px, 0px); } /* Adjusted values for left to right motion */}
+ @keyframes floatingRight { from { transform: translate(0, 0px); } 50% { transform: translate(15px, 15px); } /* Adjusted values for right to left motion */ to { transform: translate(0, 0); } /* Adjusted values for right to left motion */}
+
+.card-box{background-color: #e0d0d000;margin-bottom: 30px;border-radius: 1rem;width: 10rem;background-color: #fff;}
+.card-3{background-color: #16141400;margin-bottom: 90px;padding-left: 50px;}
+.marq {background-color: #302f2feb;margin-top: -3px;padding-top: 10px;padding-bottom: 40px;height: 30px;width: 100%;word-spacing: 15px;letter-spacing: 3px;transform: rotate(-2deg);}
+#hero{background:url(images/bggg.jpg) no-repeat center center fixed;background-size: cover;}
+#team{background:url(images/bg3.webp) no-repeat center center fixed;background-size: cover;}
+
+#team .card{background: linear-gradient(180deg, rgba(52,72,79,1) 0%, rgba(53,88,88,1) 35%, rgba(0,212,255,1) 100%);}
+#team .button:hover {background: linear-gradient(269deg, aqua 35%, rgba(0,212,255,1) 100%);}
+#team .button{border: 2px solid #345053;background:transparent;color: white;padding: 15px 32px;font-weight:600;text-align: center;text-decoration: none;display: inline-block;font-size: 18px;width:100%;}
+ #team .container h1{text-align: center;color: #fff;}
+ ul.user li {display: inline-block;vertical-align: middle;}
+ .user img{width: 60px !important;height: 60px !important;}
+ #about{background:url(images/bgprint.jpg) no-repeat center center;background-size: cover;}
+ #about .profile-image img{margin-top: -74px;}
+ #customer{background-color: rgb(83, 83, 187);}
+ #blog{background-color: rgb(235, 237, 235)}
+ #blog .card:hover {  transform: scale(1.06);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  }
+ #footer{background-color: rgb(14, 12, 12);display: table;width: 100%;background-size: cover;}
