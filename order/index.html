@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        background-color: #5592c8;
+        font-family: "Roboto", sans-serifl;
+      }
+
+      .shopping-cart {
+        width: 750px;
+        height: auto;
+        margin: 5em auto;
+        background: #fff;
+        box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 0.5em;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* item styling */
+      .title {
+        height: 3.75em;
+        border-bottom: 1px solid #e1e8ee;
+        padding: 1.25em 1.75em;
+        color: #5e6977;
+        font-size: 1.125em;
+        font-weight: 400;
+      }
+      .item {
+        padding: 1.25em 1.75em;
+        height: 7.5em;
+        display: flex;
+      }
+      .item:nth-child(3) {
+        border-top: 1px solid #e1e8ee;
+        border-bottom: 1px solid #e1e8ee;
+      }
+
+      .buttons {
+        position: relative;
+        margin-left: 0.5em;
+        padding: 25px 12px;
+        
+      }
+      .image {
+        margin-right: 50px;
+      }
+      .description {
+        padding-top: 10px;
+        margin-right: 60px;
+        width: 115px;
+      }
+      .description span {
+        display: block;
+        font-size: 1em;
+        color: #43484d;
+        font-weight: 400;
+      }
+      .description span:first-child {
+        margin-bottom: 5px;
+      }
+      .description span:last-child {
+        font-weight: 300;
+        margin-top: 8px;
+        color: #86939e;
+      }
+
+      .quantity {
+        padding-top: 20px;
+        margin-right: 60px;
+      }
+      .quantity input {
+        -webkit-appearance: none;
+        border: none;
+        text-align: center;
+        width: 32px;
+        font-size: 1em;
+        color: #43484d;
+        font-weight: 300;
+      }
+      button[class*="btn"] {
+        width: 30px;
+        height: 30px;
+        background-color: #e1e8ee;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+      }
+      .minus-btn img {
+        margin-bottom: 3px;
+      }
+      .plus-btn img {
+        margin-top: -3px;
+      }
+
+      button:focus,
+      input:focus {
+        outline: 0;
+      }
+
+      .total-price {
+        width: 83px;
+        padding-top: 27px;
+        text-align: center;
+        font-size: 1em;
+        color: #43484d;
+        font-weight: 300;
+      }
+
+      /* media queries */
+      @media (max-width: 800px) {
+        .shopping-cart {
+          width: 100%;
+          height: auto;
+          overflow: hidden;
+        }
+        .item {
+          height: auto;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .image img {
+          width: 50%;
+        }
+        .image,
+        .quantity,
+        .description {
+          width: 100%;
+          text-align: center;
+          margin: 6px 0;
+        }
+        .buttons {
+          margin-right: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shopping-cart">
+      <!-- Title -->
+      <div class="title">Your Order</div>
+      <!-- Product #1 -->
+      <div class="item">
+        <div class="image">
+          <img
+            src="https://designmodo.com/demo/shopping-cart/item-1.png"
+            alt=""
+          />
+        </div>
+
+        <div class="description">
+          <span>Common Projects</span>
+          <span>Bball High</span>
+        </div>
+
+        <div class="quantity">
+          <button class="minus-btn" type="button" name="button">
+            <img
+              src="https://designmodo.com/demo/shopping-cart/minus.svg"
+              alt=""
+            />
+          </button>
+          <input type="text" name="name" value="1" />
+          <button class="plus-btn" type="button" name="button">
+            <img
+              src="https://designmodo.com/demo/shopping-cart/plus.svg"
+              alt=""
+            />
+          </button>
+        </div>
+
+        <div class="total-price">₹549</div>
+        <div class="buttons">
+          <i class="fa fa-trash" aria-hidden="true"></i>
+        </div>
+      </div>
+      <!-- Product #2 -->
+      <div class="item">
+        <div class="image">
+          <img
+            src="https://designmodo.com/demo/shopping-cart/item-2.png"
+            alt=""
+          />
+        </div>
+
+        <div class="description">
+          <span>Maison Margiela</span>
+          <span>Future Sneakers</span>
+          <span>White</span>
+        </div>
+
+        <div class="quantity">
+          <button class="minus-btn" type="button" name="button">
+            <img
+              src="https://designmodo.com/demo/shopping-cart/minus.svg"
+              alt=""
+            />
+          </button>
+          <input type="text" name="name" value="1" />
+          <button class="plus-btn" type="button" name="button">
+            <img
+              src="https://designmodo.com/demo/shopping-cart/plus.svg"
+              alt=""
+            />
+          </button>
+        </div>
+
+        <div class="total-price">₹870</div>
+        <div class="buttons">
+          <i class="fa fa-trash" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+</html>

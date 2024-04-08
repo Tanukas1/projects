@@ -1,0 +1,16 @@
+#head{
+    background-color: #EFEFEF;
+}
+.main{
+    text-align: center;
+}
+.marq{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.mark{
+    font-size: 36px;
+    font-weight: bold;
+    color: #C8A26F;
+    padding-bottom: 10px;
+}

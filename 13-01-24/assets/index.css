@@ -1,0 +1,36 @@
+#main{
+    background-image:url("images/b.jpg");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#featured{
+    background-color: rgba(254, 255, 255, 0.932);
+}
+/* #travel{
+
+}
+#activity{
+
+} */
+#bg{
+    background-image: url("images/back.avif");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100%;
+    z-index:-1;
+}
+/* #blog{
+
+}
+#slide{
+
+} */
+#card{
+    background-color: rgb(84, 161, 224);
+
+}
+#footer{
+    background-color: rgb(35, 33, 33);
+}

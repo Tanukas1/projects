@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <style>
+      @media (min-width: 992px) {
+        .col-lg-9 {
+          flex: 0 0 auto;
+          width: 75%;
+        }
+      }
+      table {
+        border: 0;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: auto;
+      }
+      @media (min-width: 768px) {
+        table tr:first-child {
+          border-top: none;
+        }
+      }
+      table tr:last-of-type {
+        border-bottom: 0;
+      }
+      @media (min-width: 768px) {
+        table tr {
+          padding: 0;
+          display: table-row;
+        }
+      }
+      @media (min-width: 992px) {
+        .cart-tble tr th:first-child,
+        .cart-tble tr td:first-child {
+          width: 90px;
+        }
+      }
+      table tr th:first-child,
+      table tr td:first-child {
+        padding-left: 0;
+      }
+      table tr th {
+        padding-top: 0;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--border-color);
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      table tr th,
+      table tr td {
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      @media (min-width: 768px) {
+        table tr td {
+          padding: 20px 10px;
+          display: table-cell;
+          text-align: left;
+        }
+      }
+      @media (min-width: 992px) {
+        .cart-tble tr th:nth-child(2),
+        .cart-tble tr td:nth-child(2) {
+          width: 233px;
+        }
+      }
+      @media (min-width: 768px) {
+        table tr td {
+          padding: 20px 10px;
+          display: table-cell;
+          text-align: left;
+        }
+      }
+     
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div
+        id="shopify-section-template--21161097560359__cart-items"
+        class="shopify-section cart__items-wrapper col-lg-9 col-12"
+      >
+        <script
+          src="//veterinary-workdo.myshopify.com/cdn/shop/t/3/assets/cart.js?v=10017497365385121541695972792"
+          defer="defer"
+        ></script>
+        <cart-items class="">
+          <form
+            action="/en-in/cart"
+            class="cart__contents critical-hidden"
+            method="post"
+            id="cart"
+          >
+            <div
+              id="main-cart-items"
+              data-id="template--21161097560359__cart-items"
+            >
+              <div class="js-contents order-historycontent">
+                <table class="cart-tble">
+                  <thead>
+                    <tr>
+                      <th colspan="1" scope="col">IMAGE</th>
+                      <th colspan="1" scope="col">NAME</th>
+                      <th colspan="1" scope="col">PRICE</th>
+                      <th colspan="1" scope="col">QUANTITY</th>
+                      <th colspan="1" scope="col">TOTAL</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="cart-item" id="CartItem-1">
+                      <td class="cart-item__media" data-label="Product">
+                        <a
+                          href="/en-in/products/the-original-mine-pet-platter-large-dogs?variant=44919910695207"
+                        >
+                          <img
+                            src="//veterinary-workdo.myshopify.com/cdn/shop/products/BR-3DBAGGardenFront_1024x1024_2x-removebg-preview_125x.png?v=1682317737"
+                          />
+                        </a>
+                      </td>
+                      <td data-label="Name">
+                        <a
+                          href="/en-in/products/the-original-mine-pet-platter-large-dogs?variant=44919910695207"
+                          class="cart-item__name"
+                          >The Original mine Pet Platter - Large Dogs</a
+                        >
+                        <dl>
+                          <div class="product-option">
+                            <dt>Weight:</dt>
+                            <dd>150gm</dd>
+                          </div>
+                        </dl>
+                        <p class="product-option"></p>
+                        <ul
+                          class="discounts list-unstyled"
+                          role="list"
+                          aria-label="Discount"
+                        ></ul>
+                      </td>
+                      <td data-label="cart-price">
+                        15.00<span class="currency-type">USD</span>
+                      </td>
+                      <td class="cart-item__quantity" data-label="quantity">
+                        <div class="cart-item__quantity-wrapper">
+                          <label class="visually-hidden" for="Quantity-1"
+                            >Quantity</label
+                          >
+                          <quantity-input class="qty-spinner quantity">
+                            <button
+                              class="quantity-decrement quantity__button no-js-hidden"
+                              name="minus"
+                              type="button"
+                              fdprocessedid="d9m2x"
+                            >
+                              <span class="visually-hidden"
+                                >Decrease quantity for The Original mine Pet
+                                Platter - Large Dogs</span
+                              >
+                              <svg
+                                width="12"
+                                height="2"
+                                viewBox="0 0 12 2"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0 0.251343V1.74871H12V0.251343H0Z"
+                                  fill="#61AFB3"
+                                ></path>
+                              </svg>
+                            </button>
+                            <input
+                              class="quantity__input"
+                              type="number"
+                              name="updates[]"
+                              value="1"
+                              min="0"
+                              aria-label="Quantity for The Original mine Pet Platter - Large Dogs"
+                              id="Quantity-1"
+                              data-index="1"
+                              fdprocessedid="wocxa9"
+                            />
+                            <button
+                              class="quantity__button no-js-hidden"
+                              name="plus"
+                              type="button"
+                              fdprocessedid="xfqcdl"
+                            >
+                              <span class="visually-hidden"
+                                >Increase quantity for The Original mine Pet
+                                Platter - Large Dogs</span
+                              >
+                              <svg
+                                width="12"
+                                height="12"
+                                viewBox="0 0 12 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M6.74868 5.25132V0H5.25132V5.25132H0V6.74868H5.25132V12H6.74868V6.74868H12V5.25132H6.74868Z"
+                                  fill="#61AFB3"
+                                ></path>
+                              </svg>
+                            </button>
+                          </quantity-input>
+                        </div>
+                        <div
+                          class="cart-item__error"
+                          id="Line-item-error-1"
+                          role="alert"
+                        >
+                          <small class="cart-item__error-text"></small>
+                        </div>
+                      </td>
+                      <td class="cart-item__totals right" data-label="Total">
+                        <div class="loading-overlay hidden">
+                          <div class="loading-overlay__spinner">
+                            <svg
+                              aria-hidden="true"
+                              focusable="false"
+                              role="presentation"
+                              class="spinner"
+                              viewBox="0 0 66 66"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                class="path"
+                                fill="none"
+                                stroke-width="6"
+                                cx="33"
+                                cy="33"
+                                r="30"
+                              ></circle>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="cart-item__price-wrapper">
+                          <span class="price--end">
+                            15.00<span class="currency-type">USD</span>
+                          </span>
+                        </div>
+                        <cart-remove-button
+                          id="Remove-1"
+                          class="remove-btn"
+                          data-index="1"
+                        >
+                          <a
+                            href="/en-in/cart/change?id=44919910695207:9ebbee76-939c-42f0-9748-b0503aaa2551&amp;quantity=0"
+                            aria-label="Remove The Original mine Pet Platter - Large Dogs - 150gm"
+                          >
+                            <svg
+                              width="20"
+                              height="20"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 16 16"
+                              aria-hidden="true"
+                              focusable="false"
+                              role="presentation"
+                              class="icon icon-remove"
+                            >
+                              <path
+                                d="M14 3h-3.53a3.07 3.07 0 00-.6-1.65C9.44.82 8.8.5 8 .5s-1.44.32-1.87.85A3.06 3.06 0 005.53 3H2a.5.5 0 000 1h1.25v10c0 .28.22.5.5.5h8.5a.5.5 0 00.5-.5V4H14a.5.5 0 000-1zM6.91 1.98c.23-.29.58-.48 1.09-.48s.85.19 1.09.48c.2.24.3.6.36 1.02h-2.9c.05-.42.17-.78.36-1.02zm4.84 11.52h-7.5V4h7.5v9.5z"
+                                fill="currentColor"
+                              ></path>
+                              <path
+                                d="M6.55 5.25a.5.5 0 00-.5.5v6a.5.5 0 001 0v-6a.5.5 0 00-.5-.5zM9.45 5.25a.5.5 0 00-.5.5v6a.5.5 0 001 0v-6a.5.5 0 00-.5-.5z"
+                                fill="currentColor"
+                              ></path>
+                            </svg>
+                          </a>
+                        </cart-remove-button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <p
+              class="visually-hidden"
+              id="cart-live-region-text"
+              aria-live="polite"
+              role="status"
+            ></p>
+            <p
+              class="visually-hidden"
+              id="shopping-cart-line-item-status"
+              aria-live="polite"
+              aria-hidden="true"
+              role="status"
+            >
+              Loading...
+            </p>
+          </form>
+        </cart-items>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+#nav{
+    background-color: red;
+}
+#main
+{
+    background-color: #f4f3f3de;
+    height: 70vh;
+}
+#featured{
+    background-color: #fff;
+}
+#featured .card:hover{
+    transform: scale(1.05);
+}
+#travel{
+    background-color: #f4f3f3de;
+} 
+#travel .card:hover{
+    transform: scale(1.05); 
+}
+#destination{
+    background-color: #FFF;
+}
+#footer{
+    background-color: #f4f3f3de;
+}
